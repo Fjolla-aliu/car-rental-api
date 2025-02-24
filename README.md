@@ -19,19 +19,25 @@ cd car-rental-api
 
 2. Install dependencies
 
+```sh
 npm install
+```
 
 ## Running the server
 
+```sh
 node server.js
+```
 
 The server should now be running on http://localhost:3000.
 
 ## Configure environment variables: Create a .env file and add:
 
+```properties
 PORT=3000
 MONGODB_URI=mongodb://localhost:27017/carRental
 SECRET_KEY=jwt_secret_key
+```
 
 ## Seeding the Database
 
@@ -39,38 +45,52 @@ To seed the database with initial data, the seedCars function is called automati
 
 ## API Endpoints
 
-Authentication Routes
+### Authentication Routes
 
-Register User
+#### Register User
 
-Endpoint: POST /api/auth/register
-Description: Registers a new user.
-Request Body:
-{
-"name": "Fjolla",
-"email": "fjolla@email.com",
-"password": "password"
-}
+- **Endpoint**: `POST /api/auth/register`
+- **Description**: Registers a new user.
+- **Request Body**:
 
-Login User
+  ```json
+  {
+    "name": "Fjolla",
+    "email": "fjolla@email.com",
+    "password": "password"
+  }
+  ```
 
-Endpoint: POST /api/auth/login
-Description: Logs in an existing user.
-Request Body:
-{
-"username": "fjolla",
-"password": "password"
-}
+#### Login User
 
-Get My Profile
+- **Endpoint**: `POST /api/auth/login`
+- **Description**: Logs in an existing user.
+- **Request Body**:
 
-Endpoint: GET /api/auth/my-profile
-Description: Fetches the profile of the authenticated user.
-Headers:
-Authorization: Bearer jwt_token
+  ```json
+  {
+    "username": "fjolla",
+    "password": "password"
+  }
+  ```
 
-Car Rental Routes
+#### Get My Profile
 
-Get Rental Cars
-Endpoint: GET /api/cars/rental-cars
-Description: Retrieves a list of available rental cars sorted by price.
+- **Endpoint**: `GET /api/auth/my-profile`
+- **Description**: Fetches the profile of the authenticated user.
+- **Headers**:
+
+  ```http
+  Authorization: Bearer jwt_token
+  ```
+
+### Car Rental Routes
+
+#### Get Rental Cars
+
+- **Endpoint**: `GET /api/cars/rental-cars`
+- **Description**: Retrieves a list of available rental cars sorted by price.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
