@@ -14,7 +14,7 @@ This is a simple RESTful API built with Node.js and Express.js for car rentals a
 1. Clone the repository:
 
 ```sh
-git clone https://github.com/your-username/car-rental-api.git
+git clone https://github.com/Fjolla-aliu/car-rental-api.git
 cd car-rental-api
 ```
 
@@ -123,4 +123,4 @@ GET /api/cars/rental-cars?year=2015&color=black&steering_type=automatic&number_o
 
 #### Fjolla Aliu
 
-📌 Portfolio: fjollaaliu.netlify
+📌 Portfolio: https://fjollaaliu.netlify.app/
