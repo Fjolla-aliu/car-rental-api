@@ -7,6 +7,7 @@ This is a simple RESTful API built with Node.js and Express.js for car rentals a
 - **User Authentication**: Register and log in users with secure password handling.
 - **Profile Management**: Retrieve user profile information.
 - **Car Listings**: View and explore available rental cars.
+- **Filtering**: Filter rental cars by year, color, steering type, and number of seats.
 
 ## Installation
 
@@ -88,9 +89,38 @@ To seed the database with initial data, the seedCars function is called automati
 
 #### Get Rental Cars
 
-- **Endpoint**: `GET /api/cars/rental-cars`
-- **Description**: Retrieves a list of available rental cars sorted by price.
+Get Rental Cars
+**Endpoint**: GET /api/cars/rental-cars
 
-## License
+**Description**: Retrieves a list of available rental cars sorted by price.
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+**Filters**: You can apply the following filters as query parameters:
+
+- **year**: Year of the car
+- **color**: Color of the car
+- **steering_type**: Steering type (e.g., automatic, manual)
+- **number_of_seats**: Number of seats
+
+**Example Request**:
+
+```sh
+GET /api/cars/rental-cars?year=2015&color=black&steering_type=automatic&number_of_seats=5
+```
+
+## Technologies Used
+
+- **Node.js**
+
+- **Express.js**
+
+- **MongoDB & Mongoose**
+
+- **JWT for authentication**
+
+- **dotenv for environment variables**
+
+## Author
+
+#### Fjolla Aliu
+
+📌 Portfolio: fjollaaliu.netlify

@@ -24,22 +24,7 @@ async function seedCars() {
         steering_type: "automatic",
         number_of_seats: 5,
       },
-      {
-        name: "Golf mk7",
-        price_per_day: 45.0,
-        year: 2014,
-        color: "white",
-        steering_type: "manual",
-        number_of_seats: 5,
-      },
-      {
-        name: "Golf mk6",
-        price_per_day: 40.0,
-        year: 2013,
-        color: "blue",
-        steering_type: "automatic",
-        number_of_seats: 5,
-      },
+
       {
         name: "BMW 3 Series",
         price_per_day: 75.0,
