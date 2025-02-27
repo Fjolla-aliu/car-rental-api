@@ -113,7 +113,7 @@ GET /api/cars/rental-cars?year=2015&color=black&steering_type=automatic&number_o
 
 - **Express.js**
 
-- **MongoDB & Mongoose**
+- **MongoDB**
 
 - **JWT for authentication**
 
